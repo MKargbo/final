@@ -1,6 +1,22 @@
-<h1> CASA JALISCO </h1>
-<p>
 
-<label>Description about the restaurant</label>
+<% all_meals = Meal.read %>
+<img src ="http://blog.mexicodestinos.com/wp-content/uploads/2013/03/tequila-jalisco.jpg" alt="" width ="230" height ="200">
 
+<label> Casa Jalisco brings the best Mexican cuisine</label>
 </p>
+
+
+<h2> Combinations </h2>
+
+<ul>
+
+<% all_meals.each do |meal| %>
+
+<strong><%= meal.name %></strong>
+
+<%end%>
+
+
+
+
+

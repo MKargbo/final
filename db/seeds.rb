@@ -1,9 +1,9 @@
 Meal.delete_all
-gc = Meal.create("name" => "La Gran Cena", "price" => 29)  
-ml = Meal.create("name" => "Mexico Lindo", "price" => 21)
-lb = Meal.create("name" => "La Botana", "price" => 19)
-mc = Meal.create("name" => "Macho Combo", "price" => 28)
-gf = Meal.create("name" => "Grande Feast", "price" => 39)
+gc = Meal.create("name" => "La Gran Cena", "price" => 29, "description" => "A perfect combination of flavorful Mexican tradition.")  
+ml = Meal.create("name" => "Mexico Lindo", "price" => 21, "description" => "A true taste of Mexican cuisine.")
+lb = Meal.create("name" => "La Botana", "price" => 19, "description" => "A trio of our best appetizers from south of the border.")
+mc = Meal.create("name" => "Macho Combo", "price" => 28, "description" => "Big portion combination for those with a macho appetite.")
+gf = Meal.create("name" => "Grande Feast", "price" => 39, "description" => "A feast fit for an Aztec king. Need we say more.")
 
 
 Appetizer.delete_all

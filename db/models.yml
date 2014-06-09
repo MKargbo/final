@@ -6,6 +6,7 @@ User:
 Meal:
   - name: string
   - price: integer
+  - description: string
 
 
 
@@ -28,7 +29,7 @@ Side:
   - meal_id: string
   - photo: string
 
-Drinks:
+Beverage:
   - name: string
   - calories: integer
   - price: integer

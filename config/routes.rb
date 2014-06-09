@@ -1,7 +1,23 @@
 Rails.application.routes.draw do
 
 
-  get "/" => "menu#index"
+  get "/" => "meal#index"
+
+
+  get "/appetizer" => 'appetizer#index'
+  get "/appetizer/:id" => 'appetizer#show'
+
+  get "/beverage" => 'beverage#index'
+  get "/beverage/:id" => 'beverage#show'
+
+  get "/dessert" => 'dessert#index'
+  get "/dessert/:id" => 'dessert#show'
+
+  get "/side" => 'side#index'
+  get "/side/:id" => 'side#show'
+
+  get "/main" => 'main#index'
+  get "/main/:id" => 'main#show'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

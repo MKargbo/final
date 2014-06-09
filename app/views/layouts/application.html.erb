@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Final</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>CASA JALISCO</title>
 
-<%= yield %>
+    <%= stylesheet_link_tag    "http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" %>
 
-</body>
-</html>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>CASA JALISCO</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <%= link_to "Main Dishes", "/main", "class" => "btn btn-default"  %> 
+            <%= link_to "Appetizers", "/appetizer", "class" => "btn btn-default" %> 
+            <%= link_to "Sides", "/side", "class" => "btn btn-default" %> 
+            <%= link_to "Beverages", "/beverage", "class" => "btn btn-default" %> 
+            <%= link_to "Desserts", "/dessert", "class" => "btn btn-default" %> 
+      
+          </div>
+          <div class="pull-right">
+            <%= link_to "Sign Up", '/users/new', "class" => "btn btn-info"  %> 
+            <%= link_to "Sign In", '/login', "class" => "btn btn-info" %> 
+            <%= link_to "Sign Out", '/logout', "class" => "btn btn-info" %>
+          </div>
+        </div>
+        <hr>
+        <h4 class="text-warning"><%= notice %></h4>
+      </div>
+
+
+      <%= yield %>
