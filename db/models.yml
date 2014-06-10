@@ -15,6 +15,7 @@ Appetizer:
   - calories: integer
   - meal_id: string
   - photo: string
+  - description: string
 
 
 Main:
@@ -22,12 +23,14 @@ Main:
   - calories: integer
   - meal_id: string
   - photo: string
+  - description: string
 
 Side:
   - name: string
   - calories: integer
   - meal_id: string
   - photo: string
+  - description: string
 
 Beverage:
   - name: string
@@ -40,9 +43,7 @@ Dessert:
   - calories: integer
   - price: integer
   - photo: string
-
-
-
+  - description: string
 
 # Example table for a typical Book model.
 #

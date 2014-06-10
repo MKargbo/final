@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140609230050) do
+ActiveRecord::Schema.define(version: 20140610062632) do
 
   create_table "appetizers", force: true do |t|
     t.string  "name"
     t.integer "calories"
     t.string  "photo"
     t.string  "meal_id"
+    t.string  "description"
   end
 
   create_table "beverages", force: true do |t|
@@ -31,6 +32,7 @@ ActiveRecord::Schema.define(version: 20140609230050) do
     t.integer "calories"
     t.string  "photo"
     t.integer "price"
+    t.string  "description"
   end
 
   create_table "mains", force: true do |t|
@@ -38,6 +40,7 @@ ActiveRecord::Schema.define(version: 20140609230050) do
     t.integer "calories"
     t.string  "photo"
     t.string  "meal_id"
+    t.string  "description"
   end
 
   create_table "meals", force: true do |t|
@@ -51,6 +54,7 @@ ActiveRecord::Schema.define(version: 20140609230050) do
     t.integer "calories"
     t.string  "photo"
     t.string  "meal_id"
+    t.string  "description"
   end
 
   create_table "users", force: true do |t|

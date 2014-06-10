@@ -1,1 +1,16 @@
 <h1> DESSERTS </h1>
+
+<% all_desserts = Dessert.read %>
+
+<ul>
+
+<% all_desserts.each do |dessert| %>
+
+<li><strong><%= dessert.name %></strong></li>
+<% end %>
+
+<% all_desserts.each do |dessert| %>
+<img src="dessert.photo", width = "200" height = "200">
+<% end %>
+
+</ul>

@@ -1,1 +1,16 @@
-<h1> APPETIZERS </h1>
+<h1> APPETIZERS </h1
+
+<% all_apps = Appetizer.read %>
+
+<ul>
+
+<% all_apps.each do |app| %>
+
+<li><strong><%= app.name %></strong></li>
+<% end %>
+
+<% all_apps.each do |side| %>
+<img src="app.photo", width = "200" height = "200">
+<% end %>
+
+</ul>

@@ -1,6 +1,23 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
+
+.review {
+  margin-top: 12px;
+  border-top: 2px solid gray;
+  padding-top: 12px;
+}
+
+.header {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+}
+
+.aside { margin-top: 36px; }
+.meal { margin-bottom: 36px; }
+
+img { border: 1px solid #CCC; box-shadow: 10px 10px 10px #999; }
+
+
+
+
  *
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
  * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.

@@ -1,1 +1,16 @@
 <h1> MAIN DISHES </h1>
+
+<% all_mains = Main.read %>
+
+<ul>
+
+<% all_mains.each do |main| %>
+
+<li><strong><%= main.name %></strong></li>
+<% end %>
+
+<% all_mains.each do |main| %>
+<img src="main.photo", width = "200" height = "200">
+<% end %>
+
+</ul>

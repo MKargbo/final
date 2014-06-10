@@ -1,21 +1,28 @@
-
-<% all_meals = Meal.read %>
-<img src ="http://blog.mexicodestinos.com/wp-content/uploads/2013/03/tequila-jalisco.jpg" alt="" width ="230" height ="200">
-
-<label> Casa Jalisco brings the best Mexican cuisine</label>
+<h1> Our Story </h1>
+<label> Viva Jalisco Mexican Restaurant opened in 2006 to deliver authentic taste and flavors from the land of the blue agave. Our signature combinations bring together classic Mexican dishes with a contemporary flair.  Our chefs have traveled through the state of Jalisco, birthplace of tequila and mariachi, to discover rich recipes, unique ingredients, and the vibrant spices.  Each season we bring new combinations to the menu and we never stop searching for fantastic recipes in order to create new experiences and fuse together the best of Mexican traditions. </label>
 </p>
-
 
 <h2> Combinations </h2>
 
-<ul>
 
-<% all_meals.each do |meal| %>
 
-<strong><%= meal.name %></strong>
+    <% Meal.read.order("name desc").each do |meal| %>
 
-<%end%>
+         <strong><%= link_to meal["name"], "/meal/#{meal["id"]}" %></strong>
+        
+        <p><%= meal["description"] %></p>   	
+        <p>Price:  $<%= meal["price"] %></p>
 
+ 
+    <% end %>
+  
+
+
+
+
+
+
+ 
 
 
 
