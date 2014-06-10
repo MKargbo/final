@@ -23,6 +23,8 @@ Rails.application.routes.draw do
   # --- Delete
   delete "/users/:id" => 'users#destroy'
 
+  get "/meal" => 'meal#index'
+  get "/meal/:id" => 'meal#show'
 
   get "/appetizer" => 'appetizer#index'
   get "/appetizer/:id" => 'appetizer#show'
@@ -39,20 +41,7 @@ Rails.application.routes.draw do
   get "/main" => 'main#index'
   get "/main/:id" => 'main#show'
 
-  # --- Create
-  get "/users/new" => 'users#new'
-  post "/users" => 'users#create'
-
-  # --- Read
-  get "/users" => 'users#index'
-  get "/users/:id" => 'users#show'
-
-  # -- Update
-  get "/users/:id/edit" => 'users#edit'
-  patch "/users/:id" => 'users#update'
-
-  # --- Delete
-  delete "/users/:id" => 'users#destroy'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

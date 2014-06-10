@@ -1,0 +1,9 @@
+<% dessert_id = params["id"] %> 
+<% dessert = Dessert.read(dessert_id) %>
+
+
+<h1><strong> <%= dessert["name"] %></strong> </h1>
+
+<p><%= dessert["description"] %></p>
+<p> Calories: <%= dessert["calories"] %></p>
+<img src="<%= dessert["photo"] %>" width="120" height ="100">

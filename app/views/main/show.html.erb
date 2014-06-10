@@ -1,0 +1,9 @@
+<% main_id = params["id"] %> 
+<% main = Main.read(main_id) %>
+
+
+<h1><strong> <%= main["name"] %></strong> </h1>
+
+<p><%= main["description"] %></p>
+<p> Calories: <%= main["calories"] %></p>
+<img src="<%= main["photo"] %>" width="120" height ="100">

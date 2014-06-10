@@ -7,7 +7,7 @@ gf = Meal.create("name" => "Grande Feast", "price" => 39, "description" => "A fe
 
 
 Appetizer.delete_all
-ec = Appetizer.create("name" => "Ensalada Classica", "calories" => 350, "meal_id" => gf.id, "photo" => "http://blogs.villagegreen.com/cincinnati/files/2013/01/salad.jpg", "description" => "A classic and simple yet zesty salad")
+ec = Appetizer.create("name" => "Ensalada Classica", "calories" => 350, "meal_id" => gf.id, "photo" => "http://blogs.villagegreen.com/cincinnati/files/2013/01/salad.JPG", "description" => "A classic and simple yet zesty salad")
 sa = Appetizer.create("name" => "Sopa Azteca", "calories" => 400,"meal_id" => mc.id, "photo" => "http://static.thepioneerwoman.com/cooking/files/2011/01/5337400468_d5892f3a03_o.jpg", "description" => "A tortilla and french onion soup fusion")
 fc = Appetizer.create("name" => "Fresh Guacamole", "calories" => 375,"meal_id" => lb.id, "photo" => "http://commons.wikimedia.org/wiki/File:El_tango_guacamole.jpg", "description" => "Guacamole prepared table side")
 ro = Appetizer.create("name" => "Raw Oysters", "calories" => 295,"meal_id" => lb.id,"photo" => "http://khoi.fitbodylife.com/wp-content/uploads/2012/04/IMG_1806.jpg", "description" => "A delicacy that is believed to be an aphrodisiac")

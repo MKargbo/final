@@ -6,11 +6,10 @@
 
 <% all_apps.each do |app| %>
 
-<li><strong><%= app.name %></strong></li>
+<li><strong><%= link_to app["name"], "/appetizer/#{app["id"]}" %></strong></li>
+
 <% end %>
 
-<% all_apps.each do |side| %>
-<img src="app.photo", width = "200" height = "200">
-<% end %>
+
 
 </ul>

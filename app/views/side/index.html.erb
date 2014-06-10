@@ -8,11 +8,8 @@
 
 <% all_sides.each do |side| %>
 
-<li><strong><%= side.name %></strong></li>
-<% end %>
+<li><strong><%= link_to side["name"], "/side/#{side["id"]}" %></strong></li>
 
-<% all_sides.each do |side| %>
-<img src="side.photo", width = "200" height = "200">
 <% end %>
 
 </ul>

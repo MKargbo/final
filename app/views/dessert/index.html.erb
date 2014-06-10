@@ -6,11 +6,7 @@
 
 <% all_desserts.each do |dessert| %>
 
-<li><strong><%= dessert.name %></strong></li>
-<% end %>
-
-<% all_desserts.each do |dessert| %>
-<img src="dessert.photo", width = "200" height = "200">
+<li><strong><%= link_to dessert["name"], "/dessert/#{dessert["id"]}" %></strong></li>
 <% end %>
 
 </ul>

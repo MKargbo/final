@@ -6,11 +6,8 @@
 
 <% all_mains.each do |main| %>
 
-<li><strong><%= main.name %></strong></li>
-<% end %>
+<li><strong><%= link_to main["name"], "/main/#{main["id"]}" %></strong></li>
 
-<% all_mains.each do |main| %>
-<img src="main.photo", width = "200" height = "200">
 <% end %>
 
 </ul>

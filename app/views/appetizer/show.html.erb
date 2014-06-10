@@ -1,0 +1,9 @@
+<% appetizer_id = params["id"] %> 
+<% appetizer = Appetizer.read(appetizer_id) %>
+
+
+<h1><strong> <%= appetizer["name"] %></strong> </h1>
+
+<p><%= appetizer["description"] %></p>
+<p> Calories: <%= appetizer["calories"] %></p>
+<img src="<%= appetizer["photo"] %>" width="120" height ="100">

@@ -1,0 +1,9 @@
+<% side_id = params["id"] %> 
+<% side = Side.read(side_id) %>
+
+
+<h1><strong> <%= side["name"] %></strong> </h1>
+
+<p><%= side["description"] %></p>
+<p> Calories: <%= side["calories"] %></p>
+<img src="<%= side["photo"] %>" width="120" height ="100">

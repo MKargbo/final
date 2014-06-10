@@ -1,2 +1,44 @@
-<% meal_id = params["id"] %>
+<% meal_id = params["id"] %> 
 <% meal = Meal.read(meal_id) %>
+ 	
+
+    
+
+<h1><strong> <%= meal["name"] %></strong> </h1>
+
+<h4>Appetizer</h4>
+
+<% appetizer = Appetizer.where("meal_id" => meal["id"]) %>
+
+ <ul>
+      <% appetizer.each do |app| %>
+
+        <li>
+          <%= link_to app["name"], "/appetizer/#{app["id"]}" %>
+        </li>
+      <% end %>
+
+    </ul>
+
+<h4>Main</h4>
+
+<% main = Main.where("meal_id" => meal["id"]) %>
+ <ul>
+      <% main.each do |main| %>
+        <li>
+          <%= link_to main["name"], "/main/#{main["id"]}" %>
+        </li>
+      <% end %>
+    </ul>
+
+<h4>Side</h4>
+<% side = Side.where("meal_id" => meal["id"]) %>
+ <ul>
+      <% side.each do |side| %>
+        <li>
+          <%= link_to side["name"], "/side/#{side["id"]}" %>
+        </li>
+      <% end %>
+    </ul>
+
+
