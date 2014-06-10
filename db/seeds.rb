@@ -22,14 +22,14 @@ cod = Main.create("name" => "Baja Black Cod", "calories" => 430,"meal_id" => gc.
 pozole = Main.create("name" => "Herb Green Pozole","calories" => 630,"meal_id" => gc.id, "photo" => "http://mexicrave.files.wordpress.com/2013/11/dsc000261.jpg", "description" => "Pozole prepared with a special tomatillo and green chili base")
 quesadilla = Main.create("name" => "Wood Grilled Quesadilla","calories" => 560,"meal_id" => ml.id, "photo" => "http://www.wikikitchen.net/wp-content/uploads/2011/04/Quesadilla.jpg", "description" => "Our quesadillas are the cheesiest and they are loaded with peppers, mushrooms and spicy tequila lime chicken")
 torta = Main.create("name" => "Torta de Hamburguesa","calories" => 700,"meal_id" => mc.id, "photo" => "http://cbswashington.files.wordpress.com/2012/08/tortas_supertacosdc.jpg", "description" => "A classic Mexican style sandwich that rivals any hamburger")
-chilaquiles = Main.create("name" => "Chilaquiles Yucatecos","calories" => 950,"meal_id" => gf.id, "photo" => "http://www.patismexicantable.com/site/wp-content/uploads/2012/12/EP207_GreenChilaquiles2-546x367.jpg", "description" => "Spicky tortilla chip, cheese and enchilada sauce casserole")
+chilaquiles = Main.create("name" => "Chilaquiles Yucatecos","calories" => 950,"meal_id" => gf.id, "photo" => "http://www.patismexicantable.com/site/wp-content/uploads/2012/12/EP207_GreenChilaquiles2-546x367.jpg", "description" => "Spicy tortilla chip, cheese and enchilada sauce casserole")
 
 Side.delete_all
 rice = Side.create("name" => "Spanish Rice", "calories" => 200,"meal_id" => gc.id, "photo" => "http://thumbs.ifood.tv/files/rice%20by%20axe.jpg", "description" => "Our famous orange tinted rice")
 charro = Side.create("name" => "Charro Beans", "calories" => 300,"meal_id" => gf.id,  "photo" => "http://recipegreat.com/images/mexican-charro-beans-01.jpg", "description" => "A bean stew loaded with bacon, tri-tip flank steak, and chorizo")
 beans = Side.create("name" => "Double Refried Beans","calories" => 470,"meal_id" => ml.id, "photo" => "http://1.bp.blogspot.com/_UIXOn06Pz70/ScGVo7vK5iI/AAAAAAAAGcQ/G0MwWSbitHQ/s800/Refried+Beans+500.jpg", "description" => "We make our refried beans with the healthiest virgin olive oil")
 cilantro = Side.create("name" => "Cilantro Lemon Rice","calories" => 340,"meal_id" => gf.id, "photo" => "http://1.bp.blogspot.com/_PDI8oNcmvWE/TDvAZayy1AI/AAAAAAAAGGk/RmTbCsakxFo/s1600/cilantro+lime+rice+020.JPG", "description" => "Lime and cilantro infused white rice")
-fries = Side.create("name" => "Tequila Battered Fries","calories" => 400,"meal_id" => mc.id, "photo" => "http://chezalaska.com/blog/wp-content/uploads/2010/02/Pommes-Frites.jpg", "description" => "Our unique tequila battered fries our crispy and served piping hot")
+fries = Side.create("name" => "Tequila Battered Fries","calories" => 400,"meal_id" => mc.id, "photo" => "http://chezalaska.com/blog/wp-content/uploads/2010/02/Pommes-Frites.jpg", "description" => "Our unique tequila battered fries are crispy and served piping hot")
 salad = Side.create("name" => "Mariachi Salad","calories" => 380,"meal_id" => gc.id, "photo" => "http://3.bp.blogspot.com/-HgTRfbdKREw/T4OaFODhYGI/AAAAAAAAVW4/TdusWAph9_U/s1600/southwestern-quinoa-salad-9-kalynskitchen.jpg", "description" => "A southwest inspired salad with a medley of fine ingredients")
 
 Beverage.delete_all
